@@ -1,11 +1,226 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Nany</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+
+    
+    <header class="header">
+      <a href="#hero" class="logo">
+        <img src="logo.png">
+      </a>
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="right-content">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h5 data-aos="fade-right" data-aos-duration="1400">#Tus sueños tus regalos</h5>
+        <H1 data-aos="zoom-in-left" data-aos-duration="1400", data-aos-delay="200">Envolturas Nany</H1>
+        <p data-aos="fade-right" data-aos-duration="1400", data-aos-delay="300">En Envolturas Nany, transformamos cada detalle en una obra de arte. Somos una tienda dedicada a envolver regalos con estilo, decorar eventos para momentos inolvidables, y dar un toque especial a tus espacios con proyectos creativos como pintar puertas y mucho más. Nos apasiona hacer de lo cotidiano algo único, plasmando creatividad en cada proyecto que realizamos.</p>
+        <div class="main-hero" data-aos="flip-down" data-aos-duration="1400", data-aos-delay="400">
+          <a href="#contact" class="btn">Ordena Ahora!</a>
+        </div>
+      </div>
+      <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
+        <img src="hero.png" alt="">
+      </div>
+      
+    </section>
+    <div class="icons">
+      <a href="https://www.facebook.com/share/1FTkXAbusT/" data-aos="fade-in" data-aos-duration="1400", data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
+      <a href="https://wa.me/+5214499061349" data-aos="fade-in" data-aos-duration="1400", data-aos-delay="800"><i class="ri-whatsapp-line"></i></a>
+      
+    </div>
+    <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400", data-aos-delay="900">
+      <a href="#">
+        <i class="ri-scroll-to-bottom-line"></i>
+        Scroll Down
+      </a>
+    </div>
+    
+    <div class="carousel" id="Paquetes">
+      <!-- list item -->
+      <div class="list">
+          <div class="item">
+              <img src="img1.jpg">
+              <div class="content">
+                  <div class="author">Envolturas Nany</div>
+                  <div class="title">Arte en Papel</div>
+                  <div class="topic">Regalos</div>
+                  <div class="des">
+                    Tus regalos no solo estarán envueltos, estarán vestidos con creatividad, elegancia y un toque especial que hará que cada sorpresa sea inolvidable.
+                  </div>
+                  <div class="buttons">
+                    <a href="collage.html" class="button">
+                      Ejemplos!!
+                    </a>
+                    <a href="#contact" class="button">
+                      Ordena ya!
+                    </a>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <img src="img2.jpg">
+              <div class="content">
+                  <div class="author">Envolturas Nany</div>
+                  <div class="title">Puertas con Estilo</div>
+                  <div class="topic">Puertas</div>
+                  <div class="des">
+                    Transformamos tus puertas en piezas únicas que reflejan tu personalidad y dan vida a tus espacios, desde colores vibrantes hasta diseños personalizados.
+                  </div>
+                  <div class="buttons">
+                    <a href="#contact" class="button">
+                      Ordena ya!
+                    </a>
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <img src="img3.jpg">
+              <div class="content">
+                  <div class="author">Envolturas Nany</div>
+                  <div class="title">Eventos de Ensueño</div>
+                  <div class="topic">Eventos</div>
+                  <div class="des">
+                    Cada detalle cuenta. Creamos decoraciones que combinan elegancia, originalidad y tu esencia para que tus celebraciones sean inolvidables.
+                  </div>
+                  <div class="buttons">
+                    <a href="https://ejemplo.com/ejemplos" class="button">
+                      Ejemplos!!
+                    </a>
+                    <a href="#contact" class="button">
+                      Ordena ya!
+                    </a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+          <div class="item">
+              <img src="img1.jpg">
+              <div class="content">
+                  <div class="title">
+                    Arte en Papel
+                  </div>
+                  <div class="description">
+                    Haz que cada regalo cuente una historia
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <img src="img2.jpg">
+              <div class="content">
+                  <div class="title">
+                      Puertas con Estilo
+                  </div>
+                  <div class="description">
+                    Convierte cada entrada en una obra maestra.
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+              <img src="img3.jpg">
+              <div class="content">
+                  <div class="title">
+                      Eventos de Ensueño
+                  </div>
+                  <div class="description">
+                      Diseñamos el escenario perfecto para tus momentos especiales.
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+    
+
+      <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      
+      <div class="time"></div>
+  </div>
+
+  <script src="app.js"></script>
+ 
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:1,} );
+    </script>
+    <section class="contact" id="contact">
+      <h2 class="heading"> ¿Listo para pedir? <span>Contáctame</span></h2>
+      <form action="https://formspree.io/f/mvggnjov"
+      method="POST">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="Nombre" placeholder="Nombre" required>
+          </div>
+          <div class="input-box">
+            <input type="number" id="phone" placeholder="Número" required>
+          </div>
+        </div>
+        <div class="input-group2">
+          <textarea id="message" placeholder="Mensaje" required></textarea>
+          <input type="submit" value="Enviar mensaje" class="btn">
+        </div>
+      </form>
+    </section>
+  
+  
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1FTkXAbusT/" data-aos="fade-in" data-aos-duration="1400", data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
+        <a href="https://wa.me/+5214499061349" data-aos="fade-in" data-aos-duration="1400", data-aos-delay="800"><i class="ri-whatsapp-line"></i></a>
+      </div>
+  
+      <ul class="list">
+        
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#paquetes">About</a>
+        </li>
+        
+        <li>
+          <a href="#contact">Contacto</a>
+        </li>
+        <li>
+          <a href="https://wa.me/+5214499061349">Whatsapp</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        © Envolturas Nany | All Rights Reserved
+      </p>
+    </footer>
     
 </body>
 </html>

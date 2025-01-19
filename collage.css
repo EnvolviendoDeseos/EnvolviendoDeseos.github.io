@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.grid-container{
+    margin: auto;
+    max-width: 600px;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat 16,1fr;
+}
+
+.collage{
+    background: linear-gradient(135deg, #123456, #f0f0f0, 100%);
+}
+
+.collage .item{
+    border: 3px solid #eee;
+}
+.item{
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 10px 10px 10px 0px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item3 {
+    z-index: 5; /* Imagen más grande al centro */
+    grid-area: 3/5/8/15;
+}
+
+.item1 {
+    z-index: 8; /* Imagen superior izquierda */
+    grid-area: 1/3/4/10;
+}
+
+.item2 {
+    z-index: 7; /* Imagen inferior izquierda */
+    grid-area: 7/2/10/7;
+}
+
+.item4 {
+    z-index: 6; /* Imagen superior derecha */
+    grid-area: 2/19/5/12;
+}
+
+.item5 {
+    z-index: 6; /* Imagen inferior derecha */
+    grid-area: 6/15/10/9;
+}
+
+.item6 {
+    z-index: 5; /* Imagen intermedia izquierda */
+    grid-area: 4/2/9/9;
+}
+
+.item7 {
+    z-index: 5; /* Imagen intermedia derecha */
+    grid-area: 4/10/7/19;
+}
+
+
+.grid-container> *{
+    transition: all .5s;
+}
+.grid-container> *:hover{
+    z-index: 99;
+    transform: scale(1.3);
+}
